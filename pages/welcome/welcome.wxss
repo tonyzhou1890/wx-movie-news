@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+page {
+  height: 100%;
+  background-color: #b3d4db;
+}
+
+.user-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 160rpx;
+}
+
+.user-name {
+  margin-top:100rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.motto {
+  font-size: 22rpx;
+  font-weight: bold;
+  color: #405f80;
+}
+
+.motto-container {
+  margin-top: 200rpx;
+  border: 1px solid #405f80;
+  border-radius: 5px;
+  height: 80rpx;
+  width: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "movie-grid": "../movie-grid/movie-grid"
+  },
+  "enablePullDownRefresh": true
+}
