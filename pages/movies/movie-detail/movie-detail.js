@@ -1,6 +1,6 @@
 // pages/movies/movie-detail/movie-detail.js
 const appData = getApp()
-const utils = require('../../../utils/util.js')
+import { Movie } from './class/Movie.js'
 
 Page({
 
@@ -20,7 +20,12 @@ Page({
   onLoad: function (options) {
     const id = options.id || 305
     const url = appData.globalData.doubanBase + '/v2/movie/subject/' + id
-    utils.http(url, this.processDoubanData)
+    const movie = new Movie(url)
+    movie.getMovieData((movie) => {
+      this.setData({
+        movie
+      })
+    })
   },
 
   /**
